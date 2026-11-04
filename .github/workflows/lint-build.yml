@@ -115,7 +115,7 @@ jobs:
 
     - name: Build site for GitHub Pages
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      run: hugo --gc --minify -e ci --baseURL "${{ steps.pages.outputs.base_url }}/"
+      run: npm run build -- -e ci --baseURL "${{ steps.pages.outputs.base_url }}/"
 
     - name: Upload Pages artifact
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
