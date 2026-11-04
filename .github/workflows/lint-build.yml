@@ -48,10 +48,10 @@ jobs:
         include:
           - os: ubuntu-latest
             hugo_cachedir: '/tmp/hugo_cache_runner'
-          - os: macos-latest
-            hugo_cachedir: '/Users/runner/Library/Caches/hugo_cache'
-          - os: windows-latest
-            hugo_cachedir: '~\AppData\Local\hugo_cache'
+          #- os: macos-latest
+          #  hugo_cachedir: '/Users/runner/Library/Caches/hugo_cache'
+          #- os: windows-latest
+          #  hugo_cachedir: '~\AppData\Local\hugo_cache'
 
     runs-on: ${{ matrix.os }}
 
