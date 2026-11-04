@@ -44,7 +44,7 @@ jobs:
       matrix:
         os: [ubuntu-latest] #macos-latest, windows-latest, 
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-        node-version: [24.x] #22.x, 26.x
+        node-version: [26.x] #22.x, 26.x
         include:
           - os: ubuntu-latest
             hugo_cachedir: '/tmp/hugo_cache_runner'
