@@ -133,3 +133,18 @@
 
 [links]
     hinode = "https://gethinode.com"
+
+[statusClasses]
+    "down" = "danger"
+    "resolved" = "success"
+    "degraded" = "warning"
+    "at risk" = "dark"
+
+[statusData]
+    # URL for publicly-shared CSV view of Google Sheet with CEDA status updates
+    #"sourceURL" = "https://cedadev.github.io/ceda-status/status.json"
+    #"sourceURL" = "http://127.0.0.1:8080/status.json"
+    "sourceURL" = "https://mjpritchard.github.io/mjp-status/status.json"
+    #"sourceURL" = "https://raw.githubusercontent.com/mjpritchard/mjp-status/refs/heads/main/status.json"
+    # https://stackoverflow.com/a/25373840/20939086
+    "viewURL" = "https://github.com/cedadev/ceda-status/blob/main/status.json"
